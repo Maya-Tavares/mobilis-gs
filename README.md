@@ -10,15 +10,15 @@ Aplicativo Flutter do lado do **solicitante** de um banco solidário de equipame
 
 ## 2. Tema da Global Solution
 
-**CitizenTech** (Global Solution 2026.2), alinhado aos ODS 3 (Saúde e Bem-Estar), 10 (Redução das Desigualdades) e 11 (Cidades e Comunidades Sustentáveis).
+**CitizenTech** (Global Solution 2026.2), alinhado aos ODS 3 (Saúde e Bem-Estar), 10 (Redução das Desigualdades), 11 (Cidades e Comunidades Sustentáveis) e 12 (Consumo e produção responsáveis).
 
 **Problema que o Mobilis resolve:** muitas pessoas precisam de equipamentos de apoio à saúde e não têm como comprá-los, enquanto instituições têm itens parados em estoque. O Mobilis aproxima as duas pontas: o cidadão encontra o equipamento disponível perto de casa e o solicita por empréstimo ou doação.
 
 ## 3. Descrição da solução
 
-O solicitante abre o app, vê um breve onboarding e chega à tela inicial com os equipamentos disponíveis em São Paulo. Ele pode buscar por texto, filtrar por tipo de equipamento e por modalidade (empréstimo ou doação), favoritar itens e abrir os detalhes. Na tela de detalhes ele vê as informações do item e da instituição, o horário de retirada, traça a rota no Google Maps ("Como chegar"), liga para a instituição e solicita o equipamento na modalidade desejada. Os pedidos ficam em "Meus pedidos", onde podem ser cancelados. No perfil, o usuário informa nome e CEP (o endereço é preenchido pela API ViaCEP) e acompanha seus favoritos.
+O solicitante abre o app, vê um breve onboarding e chega à tela inicial, onde aparecem os equipamentos disponíveis nas proximidades. Ele pode buscar por texto, filtrar por tipo de equipamento e por modalidade (empréstimo ou doação), favoritar itens e abrir os detalhes. Na tela de detalhes, ele vê as informações do item e da instituição, o horário de retirada, traça a rota no Google Maps ("Como chegar"), liga para a instituição e solicita o equipamento na modalidade desejada. Os pedidos ficam em "Meus pedidos", onde podem ser cancelados. No perfil, o usuário informa nome e CEP (o endereço é preenchido pela API ViaCEP) e acompanha seus favoritos.
 
-Os dados do usuário (onboarding visto, favoritos, pedidos e perfil) ficam salvos no próprio aparelho com `shared_preferences`.
+Os dados do usuário (favoritos, pedidos e perfil) ficam salvos no próprio aparelho com `shared_preferences`.
 
 ## 4. Fluxo de telas
 
