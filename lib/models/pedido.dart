@@ -15,6 +15,9 @@ class Pedido {
     this.status = 'Reservado',
   });
 
+  String get dataFormatada =>
+      '${data.day.toString().padLeft(2, '0')}/${data.month.toString().padLeft(2, '0')}/${data.year}';
+
   factory Pedido.fromJson(Map<String, dynamic> json) => Pedido(
         equipamentoId: json['equipamentoId'] as int,
         tipo: (json['tipo'] ?? '') as String,
