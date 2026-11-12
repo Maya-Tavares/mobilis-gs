@@ -6,7 +6,7 @@ import '../models/equipamento.dart';
 
 class EquipamentoService {
   static const String urlRaw =
-      'https://raw.githubusercontent.com/Maya-Tavares/mobilis-flutter/main/data/equipamentos.json';
+      'https://raw.githubusercontent.com/Maya-Tavares/mobilis-gs/main/data/equipamentos.json';
 
   final http.Client _client;
   EquipamentoService({http.Client? client}) : _client = client ?? http.Client();

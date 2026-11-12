@@ -68,7 +68,7 @@ Exemplo de resposta (`/ws/01310100/json/`):
 
 ### JSON de equipamentos (GitHub)
 
-- URL raw: <https://raw.githubusercontent.com/Maya-Tavares/mobilis-flutter/main/data/equipamentos.json>
+- URL raw: <https://raw.githubusercontent.com/Maya-Tavares/mobilis-gs/main/data/equipamentos.json>
 - Lista com 18 equipamentos fictícios em São Paulo. Estrutura de cada item:
 
 ```json
@@ -124,8 +124,8 @@ test/                    # testes unitários e de widget
 Requisitos: Flutter 3.41.7 (canal stable) com Dart ^3.11.
 
 ```bash
-git clone https://github.com/Maya-Tavares/mobilis-flutter.git
-cd mobilis-flutter
+git clone https://github.com/Maya-Tavares/mobilis-gs.git
+cd mobilis-gs
 flutter pub get
 flutter run            # escolha o dispositivo; use -d chrome para rodar no navegador
 ```
