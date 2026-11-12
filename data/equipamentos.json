@@ -1,0 +1,425 @@
+[
+  {
+    "id": 1,
+    "tipo": "Cadeira de rodas",
+    "descricao": "Cadeira de rodas dobrável em aço, com apoio de pés removível.",
+    "estadoConservacao": "Bom",
+    "modalidades": [
+      "Empréstimo",
+      "Doação"
+    ],
+    "status": "Disponível",
+    "fotoUrl": "https://picsum.photos/seed/mobilis1/600/400",
+    "instituicao": {
+      "nome": "ONG Mãos Solidárias",
+      "tipo": "ONG",
+      "endereco": "Rua Augusta, 1200",
+      "bairro": "Consolação",
+      "cep": "01304-001",
+      "latitude": -23.5539,
+      "longitude": -46.6527,
+      "horarioRetirada": "Seg a Sex, 9h às 17h",
+      "telefone": "(11) 3000-1001"
+    },
+    "prazoDiasEmprestimo": 60
+  },
+  {
+    "id": 2,
+    "tipo": "Cadeira de rodas",
+    "descricao": "Cadeira de rodas leve em alumínio, ideal para uso diário.",
+    "estadoConservacao": "Ótimo",
+    "modalidades": [
+      "Empréstimo"
+    ],
+    "status": "Disponível",
+    "fotoUrl": "https://picsum.photos/seed/mobilis2/600/400",
+    "instituicao": {
+      "nome": "Hospital Esperança Viva",
+      "tipo": "Hospital",
+      "endereco": "Av. Dr. Enéas Carvalho de Aguiar, 255",
+      "bairro": "Cerqueira César",
+      "cep": "05403-000",
+      "latitude": -23.5568,
+      "longitude": -46.67,
+      "horarioRetirada": "Seg a Sáb, 8h às 16h",
+      "telefone": "(11) 3000-1003"
+    },
+    "prazoDiasEmprestimo": 90
+  },
+  {
+    "id": 3,
+    "tipo": "Cadeira de rodas",
+    "descricao": "Cadeira de rodas com assento largo para maior conforto.",
+    "estadoConservacao": "Regular",
+    "modalidades": [
+      "Empréstimo",
+      "Doação"
+    ],
+    "status": "Disponível",
+    "fotoUrl": "https://picsum.photos/seed/mobilis3/600/400",
+    "instituicao": {
+      "nome": "Igreja Nossa Senhora da Paz",
+      "tipo": "Igreja",
+      "endereco": "Rua Vergueiro, 2500",
+      "bairro": "Vila Mariana",
+      "cep": "04102-000",
+      "latitude": -23.588,
+      "longitude": -46.635,
+      "horarioRetirada": "Ter e Qui, 14h às 18h",
+      "telefone": "(11) 3000-1002"
+    },
+    "prazoDiasEmprestimo": 45
+  },
+  {
+    "id": 4,
+    "tipo": "Cadeira de banho",
+    "descricao": "Cadeira de banho com encosto e furo sanitário, estrutura antiferrugem.",
+    "estadoConservacao": "Bom",
+    "modalidades": [
+      "Empréstimo"
+    ],
+    "status": "Disponível",
+    "fotoUrl": "https://picsum.photos/seed/mobilis4/600/400",
+    "instituicao": {
+      "nome": "ONG Cuidar Zona Leste",
+      "tipo": "ONG",
+      "endereco": "Av. Radial Leste, 3000",
+      "bairro": "Tatuapé",
+      "cep": "03071-000",
+      "latitude": -23.54,
+      "longitude": -46.576,
+      "horarioRetirada": "Seg a Sex, 10h às 16h",
+      "telefone": "(11) 3000-1004"
+    },
+    "prazoDiasEmprestimo": 60
+  },
+  {
+    "id": 5,
+    "tipo": "Cadeira de banho",
+    "descricao": "Cadeira de banho dobrável com rodízios com freio.",
+    "estadoConservacao": "Ótimo",
+    "modalidades": [
+      "Empréstimo",
+      "Doação"
+    ],
+    "status": "Disponível",
+    "fotoUrl": "https://picsum.photos/seed/mobilis5/600/400",
+    "instituicao": {
+      "nome": "ONG Apoio Sul",
+      "tipo": "ONG",
+      "endereco": "Av. Santo Amaro, 5000",
+      "bairro": "Brooklin",
+      "cep": "04506-000",
+      "latitude": -23.612,
+      "longitude": -46.693,
+      "horarioRetirada": "Seg a Sex, 9h às 15h",
+      "telefone": "(11) 3000-1006"
+    },
+    "prazoDiasEmprestimo": 60
+  },
+  {
+    "id": 6,
+    "tipo": "Cadeira de banho",
+    "descricao": "Cadeira de banho simples em alumínio, regulável em altura.",
+    "estadoConservacao": "Regular",
+    "modalidades": [
+      "Doação"
+    ],
+    "status": "Disponível",
+    "fotoUrl": "https://picsum.photos/seed/mobilis6/600/400",
+    "instituicao": {
+      "nome": "Paróquia São Francisco de Assis",
+      "tipo": "Igreja",
+      "endereco": "Rua Voluntários da Pátria, 1800",
+      "bairro": "Santana",
+      "cep": "02011-000",
+      "latitude": -23.5,
+      "longitude": -46.625,
+      "horarioRetirada": "Sáb, 9h às 12h",
+      "telefone": "(11) 3000-1005"
+    },
+    "prazoDiasEmprestimo": 30
+  },
+  {
+    "id": 7,
+    "tipo": "Andador",
+    "descricao": "Andador articulado de alumínio com regulagem de altura.",
+    "estadoConservacao": "Bom",
+    "modalidades": [
+      "Empréstimo",
+      "Doação"
+    ],
+    "status": "Disponível",
+    "fotoUrl": "https://picsum.photos/seed/mobilis7/600/400",
+    "instituicao": {
+      "nome": "ONG Mãos Solidárias",
+      "tipo": "ONG",
+      "endereco": "Rua Augusta, 1200",
+      "bairro": "Consolação",
+      "cep": "01304-001",
+      "latitude": -23.5539,
+      "longitude": -46.6527,
+      "horarioRetirada": "Seg a Sex, 9h às 17h",
+      "telefone": "(11) 3000-1001"
+    },
+    "prazoDiasEmprestimo": 60
+  },
+  {
+    "id": 8,
+    "tipo": "Andador",
+    "descricao": "Andador com rodas dianteiras e assento para descanso.",
+    "estadoConservacao": "Ótimo",
+    "modalidades": [
+      "Empréstimo"
+    ],
+    "status": "Disponível",
+    "fotoUrl": "https://picsum.photos/seed/mobilis8/600/400",
+    "instituicao": {
+      "nome": "Hospital Esperança Viva",
+      "tipo": "Hospital",
+      "endereco": "Av. Dr. Enéas Carvalho de Aguiar, 255",
+      "bairro": "Cerqueira César",
+      "cep": "05403-000",
+      "latitude": -23.5568,
+      "longitude": -46.67,
+      "horarioRetirada": "Seg a Sáb, 8h às 16h",
+      "telefone": "(11) 3000-1003"
+    },
+    "prazoDiasEmprestimo": 90
+  },
+  {
+    "id": 9,
+    "tipo": "Andador",
+    "descricao": "Andador fixo de quatro pontas, leve e resistente.",
+    "estadoConservacao": "Regular",
+    "modalidades": [
+      "Empréstimo",
+      "Doação"
+    ],
+    "status": "Disponível",
+    "fotoUrl": "https://picsum.photos/seed/mobilis9/600/400",
+    "instituicao": {
+      "nome": "ONG Cuidar Zona Leste",
+      "tipo": "ONG",
+      "endereco": "Av. Radial Leste, 3000",
+      "bairro": "Tatuapé",
+      "cep": "03071-000",
+      "latitude": -23.54,
+      "longitude": -46.576,
+      "horarioRetirada": "Seg a Sex, 10h às 16h",
+      "telefone": "(11) 3000-1004"
+    },
+    "prazoDiasEmprestimo": 45
+  },
+  {
+    "id": 10,
+    "tipo": "Muleta",
+    "descricao": "Par de muletas axilares de alumínio com regulagem.",
+    "estadoConservacao": "Bom",
+    "modalidades": [
+      "Empréstimo",
+      "Doação"
+    ],
+    "status": "Disponível",
+    "fotoUrl": "https://picsum.photos/seed/mobilis10/600/400",
+    "instituicao": {
+      "nome": "Igreja Nossa Senhora da Paz",
+      "tipo": "Igreja",
+      "endereco": "Rua Vergueiro, 2500",
+      "bairro": "Vila Mariana",
+      "cep": "04102-000",
+      "latitude": -23.588,
+      "longitude": -46.635,
+      "horarioRetirada": "Ter e Qui, 14h às 18h",
+      "telefone": "(11) 3000-1002"
+    },
+    "prazoDiasEmprestimo": 30
+  },
+  {
+    "id": 11,
+    "tipo": "Muleta",
+    "descricao": "Muleta canadense com apoio de antebraço ajustável.",
+    "estadoConservacao": "Ótimo",
+    "modalidades": [
+      "Empréstimo"
+    ],
+    "status": "Disponível",
+    "fotoUrl": "https://picsum.photos/seed/mobilis11/600/400",
+    "instituicao": {
+      "nome": "ONG Apoio Sul",
+      "tipo": "ONG",
+      "endereco": "Av. Santo Amaro, 5000",
+      "bairro": "Brooklin",
+      "cep": "04506-000",
+      "latitude": -23.612,
+      "longitude": -46.693,
+      "horarioRetirada": "Seg a Sex, 9h às 15h",
+      "telefone": "(11) 3000-1006"
+    },
+    "prazoDiasEmprestimo": 45
+  },
+  {
+    "id": 12,
+    "tipo": "Muleta",
+    "descricao": "Par de muletas axilares com ponteiras novas.",
+    "estadoConservacao": "Bom",
+    "modalidades": [
+      "Doação"
+    ],
+    "status": "Disponível",
+    "fotoUrl": "https://picsum.photos/seed/mobilis12/600/400",
+    "instituicao": {
+      "nome": "Paróquia São Francisco de Assis",
+      "tipo": "Igreja",
+      "endereco": "Rua Voluntários da Pátria, 1800",
+      "bairro": "Santana",
+      "cep": "02011-000",
+      "latitude": -23.5,
+      "longitude": -46.625,
+      "horarioRetirada": "Sáb, 9h às 12h",
+      "telefone": "(11) 3000-1005"
+    },
+    "prazoDiasEmprestimo": 30
+  },
+  {
+    "id": 13,
+    "tipo": "Bengala",
+    "descricao": "Bengala de alumínio com cabo anatômico e regulagem de altura.",
+    "estadoConservacao": "Ótimo",
+    "modalidades": [
+      "Empréstimo",
+      "Doação"
+    ],
+    "status": "Disponível",
+    "fotoUrl": "https://picsum.photos/seed/mobilis13/600/400",
+    "instituicao": {
+      "nome": "ONG Mãos Solidárias",
+      "tipo": "ONG",
+      "endereco": "Rua Augusta, 1200",
+      "bairro": "Consolação",
+      "cep": "01304-001",
+      "latitude": -23.5539,
+      "longitude": -46.6527,
+      "horarioRetirada": "Seg a Sex, 9h às 17h",
+      "telefone": "(11) 3000-1001"
+    },
+    "prazoDiasEmprestimo": 90
+  },
+  {
+    "id": 14,
+    "tipo": "Bengala",
+    "descricao": "Bengala de quatro pontas para apoio extra na caminhada.",
+    "estadoConservacao": "Bom",
+    "modalidades": [
+      "Empréstimo",
+      "Doação"
+    ],
+    "status": "Disponível",
+    "fotoUrl": "https://picsum.photos/seed/mobilis14/600/400",
+    "instituicao": {
+      "nome": "Hospital Esperança Viva",
+      "tipo": "Hospital",
+      "endereco": "Av. Dr. Enéas Carvalho de Aguiar, 255",
+      "bairro": "Cerqueira César",
+      "cep": "05403-000",
+      "latitude": -23.5568,
+      "longitude": -46.67,
+      "horarioRetirada": "Seg a Sáb, 8h às 16h",
+      "telefone": "(11) 3000-1003"
+    },
+    "prazoDiasEmprestimo": 60
+  },
+  {
+    "id": 15,
+    "tipo": "Bengala",
+    "descricao": "Bengala dobrável em quatro partes, fácil de transportar.",
+    "estadoConservacao": "Regular",
+    "modalidades": [
+      "Doação"
+    ],
+    "status": "Disponível",
+    "fotoUrl": "https://picsum.photos/seed/mobilis15/600/400",
+    "instituicao": {
+      "nome": "ONG Cuidar Zona Leste",
+      "tipo": "ONG",
+      "endereco": "Av. Radial Leste, 3000",
+      "bairro": "Tatuapé",
+      "cep": "03071-000",
+      "latitude": -23.54,
+      "longitude": -46.576,
+      "horarioRetirada": "Seg a Sex, 10h às 16h",
+      "telefone": "(11) 3000-1004"
+    },
+    "prazoDiasEmprestimo": 30
+  },
+  {
+    "id": 16,
+    "tipo": "Cama hospitalar",
+    "descricao": "Cama hospitalar manual com duas manivelas e grades laterais.",
+    "estadoConservacao": "Bom",
+    "modalidades": [
+      "Empréstimo"
+    ],
+    "status": "Disponível",
+    "fotoUrl": "https://picsum.photos/seed/mobilis16/600/400",
+    "instituicao": {
+      "nome": "ONG Apoio Sul",
+      "tipo": "ONG",
+      "endereco": "Av. Santo Amaro, 5000",
+      "bairro": "Brooklin",
+      "cep": "04506-000",
+      "latitude": -23.612,
+      "longitude": -46.693,
+      "horarioRetirada": "Seg a Sex, 9h às 15h",
+      "telefone": "(11) 3000-1006"
+    },
+    "prazoDiasEmprestimo": 120
+  },
+  {
+    "id": 17,
+    "tipo": "Cama hospitalar",
+    "descricao": "Cama hospitalar com elevação de cabeceira e colchão incluso.",
+    "estadoConservacao": "Ótimo",
+    "modalidades": [
+      "Empréstimo",
+      "Doação"
+    ],
+    "status": "Disponível",
+    "fotoUrl": "https://picsum.photos/seed/mobilis17/600/400",
+    "instituicao": {
+      "nome": "Hospital Esperança Viva",
+      "tipo": "Hospital",
+      "endereco": "Av. Dr. Enéas Carvalho de Aguiar, 255",
+      "bairro": "Cerqueira César",
+      "cep": "05403-000",
+      "latitude": -23.5568,
+      "longitude": -46.67,
+      "horarioRetirada": "Seg a Sáb, 8h às 16h",
+      "telefone": "(11) 3000-1003"
+    },
+    "prazoDiasEmprestimo": 120
+  },
+  {
+    "id": 18,
+    "tipo": "Cama hospitalar",
+    "descricao": "Cama hospitalar simples com grades, em bom estado de uso.",
+    "estadoConservacao": "Regular",
+    "modalidades": [
+      "Empréstimo"
+    ],
+    "status": "Disponível",
+    "fotoUrl": "https://picsum.photos/seed/mobilis18/600/400",
+    "instituicao": {
+      "nome": "Paróquia São Francisco de Assis",
+      "tipo": "Igreja",
+      "endereco": "Rua Voluntários da Pátria, 1800",
+      "bairro": "Santana",
+      "cep": "02011-000",
+      "latitude": -23.5,
+      "longitude": -46.625,
+      "horarioRetirada": "Sáb, 9h às 12h",
+      "telefone": "(11) 3000-1005"
+    },
+    "prazoDiasEmprestimo": 90
+  }
+]
