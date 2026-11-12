@@ -3,7 +3,10 @@ import 'dart:io';
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mobilis/models/endereco.dart';
+import 'package:http/http.dart' as http;
+import 'package:http/testing.dart';
 import 'package:mobilis/models/equipamento.dart';
+import 'package:mobilis/services/cep_service.dart';
 
 void main() {
   test('Equipamento.fromJson converte o primeiro item de data/equipamentos.json', () {
@@ -32,5 +35,18 @@ void main() {
     });
     expect(e.localidade, 'São Paulo');
     expect(e.uf, 'SP');
+  });
+
+  test('CepService trata "erro": true do ViaCEP como falha amigável', () async {
+    final client = MockClient((_) async => http.Response('{"erro": true}', 200));
+    expect(CepService(client: client).buscar('00000-000'), throwsA(isA<CepException>()));
+  });
+
+  test('CepService devolve Endereco para CEP válido', () async {
+    final client = MockClient((_) async => http.Response.bytes(
+        utf8.encode('{"logradouro":"Avenida Paulista","bairro":"Bela Vista","localidade":"São Paulo","uf":"SP"}'),
+        200));
+    final e = await CepService(client: client).buscar('01310-100');
+    expect(e.bairro, 'Bela Vista');
   });
 }

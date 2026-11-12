@@ -75,7 +75,9 @@ class _PerfilScreenState extends State<PerfilScreen> {
     } catch (e) {
       if (!mounted) return;
       setState(() {
-        _erroCep = e.toString().replaceFirst('Exception: ', '');
+        _erroCep = e is CepException
+            ? e.mensagem
+            : 'Não foi possível consultar o CEP. Verifique sua conexão e tente novamente.';
         _estadoCep = EstadoRequisicao.erro;
       });
     }
