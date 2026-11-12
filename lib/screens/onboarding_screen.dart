@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../services/preferencias_service.dart';
 import '../theme/app_theme.dart';
 import '../widgets/botao_primario.dart';
-import 'home_screen.dart';
+import 'main_shell.dart';
 
 class _Pagina {
   final IconData icone;
@@ -43,7 +43,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     await _prefs.salvarOnboardingVisto(_naoMostrar);
     if (!mounted) return;
     Navigator.of(context)
-        .pushReplacement(MaterialPageRoute(builder: (_) => const HomeScreen()));
+        .pushReplacement(MaterialPageRoute(builder: (_) => const MainShell()));
   }
 
   @override

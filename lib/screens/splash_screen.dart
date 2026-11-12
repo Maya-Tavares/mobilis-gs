@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../services/preferencias_service.dart';
 import '../theme/app_theme.dart';
-import 'home_screen.dart';
+import 'main_shell.dart';
 import 'onboarding_screen.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -29,7 +29,7 @@ class _SplashScreenState extends State<SplashScreen> {
     if (!mounted) return;
     final visto = resultados.first as bool;
     Navigator.of(context).pushReplacement(MaterialPageRoute(
-      builder: (_) => visto ? const HomeScreen() : const OnboardingScreen(),
+      builder: (_) => visto ? const MainShell() : const OnboardingScreen(),
     ));
   }
 
