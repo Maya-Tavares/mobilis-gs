@@ -50,6 +50,7 @@ class Equipamento {
   bool get disponivel => status == 'Disponível';
 
   static const Map<String, String> _fotosPorTipo = {
+    'Cadeira de rodas': 'assets/images/equipamentos/cadeira_de_rodas.png',
     'Cadeira de banho': 'assets/images/equipamentos/cadeira_de_banho.jpeg',
     'Andador': 'assets/images/equipamentos/andador.jpeg',
     'Muleta': 'assets/images/equipamentos/muleta.jpeg',

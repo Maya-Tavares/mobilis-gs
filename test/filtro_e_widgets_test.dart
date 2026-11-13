@@ -40,12 +40,14 @@ void main() {
     expect(find.text('Peça por empréstimo ou doação'), findsOneWidget);
   });
 
-  testWidgets('EquipamentoCard usa a imagem local do tipo e o ícone de reserva na cadeira de rodas',
-      (tester) async {
-    final lista = _carregar();
-    final andador = lista.firstWhere((e) => e.tipo == 'Andador');
-    final cadeira = lista.firstWhere((e) => e.tipo == 'Cadeira de rodas');
-    for (final e in [andador, cadeira]) {
+  testWidgets('EquipamentoCard mostra imagem local; tipo sem imagem usa o ícone de reserva', (tester) async {
+    final json = jsonDecode(File('data/equipamentos.json').readAsStringSync()) as List;
+    final comImagem = Equipamento.fromJson(json.first as Map<String, dynamic>);
+    final semImagem = Equipamento.fromJson(
+        {...(json.first as Map<String, dynamic>), 'tipo': 'Tipo novo sem foto'});
+    expect(comImagem.fotoAsset, isNotNull);
+    expect(semImagem.fotoAsset, isNull);
+    for (final e in [comImagem, semImagem]) {
       await tester.pumpWidget(MaterialApp(
         home: Scaffold(
           body: SizedBox(
@@ -56,11 +58,9 @@ void main() {
           ),
         ),
       ));
-      await tester.pump();
+      await tester.pump(const Duration(milliseconds: 100));
       expect(find.text(e.tipo), findsOneWidget);
     }
-    // Cadeira de rodas: sem asset, a foto da API falha no teste e mostra o ícone de reserva.
-    await tester.pump(const Duration(milliseconds: 100));
     expect(find.byIcon(Icons.accessible), findsOneWidget);
   });
 }
