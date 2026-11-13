@@ -6,6 +6,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:mobilis/models/equipamento.dart';
 import 'package:mobilis/screens/onboarding_screen.dart';
 import 'package:mobilis/services/filtro_service.dart';
+import 'package:mobilis/widgets/equipamento_card.dart';
 import 'package:mobilis/widgets/status_chip.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -37,5 +38,29 @@ void main() {
     await tester.tap(find.text('Avançar'));
     await tester.pumpAndSettle();
     expect(find.text('Peça por empréstimo ou doação'), findsOneWidget);
+  });
+
+  testWidgets('EquipamentoCard usa a imagem local do tipo e o ícone de reserva na cadeira de rodas',
+      (tester) async {
+    final lista = _carregar();
+    final andador = lista.firstWhere((e) => e.tipo == 'Andador');
+    final cadeira = lista.firstWhere((e) => e.tipo == 'Cadeira de rodas');
+    for (final e in [andador, cadeira]) {
+      await tester.pumpWidget(MaterialApp(
+        home: Scaffold(
+          body: SizedBox(
+            width: 220,
+            height: 320,
+            child: EquipamentoCard(
+                equipamento: e, favorito: false, onTap: () {}, onFavoritar: () {}),
+          ),
+        ),
+      ));
+      await tester.pump();
+      expect(find.text(e.tipo), findsOneWidget);
+    }
+    // Cadeira de rodas: sem asset, a foto da API falha no teste e mostra o ícone de reserva.
+    await tester.pump(const Duration(milliseconds: 100));
+    expect(find.byIcon(Icons.accessible), findsOneWidget);
   });
 }

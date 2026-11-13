@@ -105,9 +105,10 @@ lib/
 ├── models/              # Equipamento, Instituicao, Endereco, Pedido, Perfil, EstadoRequisicao
 ├── services/            # EquipamentoService, CepService, PreferenciasService, FiltroEquipamentos
 ├── screens/             # Splash, Onboarding, MainShell, Home, Detalhe, MeusPedidos, Perfil
-├── widgets/             # EquipamentoCard, StatusChip, EstadoCarregamento, BotaoPrimario, TelaBase
+├── widgets/             # EquipamentoCard, FotoEquipamento, StatusChip, EstadoCarregamento, BotaoPrimario, TelaBase
 └── theme/               # cores, espaçamentos e ThemeData
 assets/images/           # logo
+assets/images/equipamentos/  # fotos locais por tipo de equipamento
 data/equipamentos.json   # base de equipamentos consumida via URL raw
 test/                    # testes unitários e de widget
 ```
@@ -116,7 +117,7 @@ test/                    # testes unitários e de widget
 - **Estados de requisição:** o enum `EstadoRequisicao` (`inicial`, `carregando`, `sucesso`, `erro`) é exibido pelo widget `EstadoCarregamento`, com mensagem amigável e botão "Tentar novamente".
 - **Persistência:** `shared_preferences` guarda a flag de onboarding, os ids favoritos, os pedidos e o perfil.
 - **Gerenciamento de estado:** apenas `StatefulWidget` e `setState`, sem pacote externo. O `MainShell` guarda os dados compartilhados (equipamentos, favoritos e pedidos) e os repassa às abas por parâmetros e callbacks.
-- **Widgets reutilizáveis:** `EquipamentoCard` (Home e favoritos), `StatusChip`, `EstadoCarregamento`, `BotaoPrimario` e `TelaBase`.
+- **Widgets reutilizáveis:** `EquipamentoCard` (Home e favoritos), `FotoEquipamento` (imagem local do tipo ou foto da API), `StatusChip`, `EstadoCarregamento`, `BotaoPrimario` e `TelaBase`.
 - **Pacotes:** `http`, `shared_preferences` e `url_launcher`.
 
 ## 8. Como executar

@@ -48,4 +48,15 @@ class Equipamento {
       };
 
   bool get disponivel => status == 'Disponível';
+
+  static const Map<String, String> _fotosPorTipo = {
+    'Cadeira de banho': 'assets/images/equipamentos/cadeira_de_banho.jpeg',
+    'Andador': 'assets/images/equipamentos/andador.jpeg',
+    'Muleta': 'assets/images/equipamentos/muleta.jpeg',
+    'Bengala': 'assets/images/equipamentos/bengala.jpeg',
+    'Cama hospitalar': 'assets/images/equipamentos/cama_hospitalar.png',
+  };
+
+  /// Foto local do tipo de equipamento, ou null quando o tipo não tem imagem no app.
+  String? get fotoAsset => _fotosPorTipo[tipo];
 }

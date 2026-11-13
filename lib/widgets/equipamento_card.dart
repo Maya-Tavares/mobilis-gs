@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../models/equipamento.dart';
 import '../theme/app_theme.dart';
+import 'foto_equipamento.dart';
 
 /// Card do equipamento usado na grade da Home e nos favoritos.
 class EquipamentoCard extends StatelessWidget {
@@ -31,19 +32,7 @@ class EquipamentoCard extends StatelessWidget {
               child: Stack(
                 fit: StackFit.expand,
                 children: [
-                  Image.network(
-                    equipamento.fotoUrl,
-                    fit: BoxFit.cover,
-                    errorBuilder: (context, erro, pilha) => const ColoredBox(
-                      color: AppCores.fundo,
-                      child: Icon(Icons.image_not_supported, color: AppCores.textoSecundario),
-                    ),
-                    loadingBuilder: (c, child, p) => p == null
-                        ? child
-                        : const ColoredBox(
-                            color: AppCores.fundo,
-                            child: Center(child: CircularProgressIndicator(strokeWidth: 2))),
-                  ),
+                  FotoEquipamento(equipamento: equipamento),
                   Positioned(
                     top: 2,
                     right: 2,

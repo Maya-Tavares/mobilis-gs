@@ -49,4 +49,18 @@ void main() {
     final e = await CepService(client: client).buscar('01310-100');
     expect(e.bairro, 'Bela Vista');
   });
+
+  test('fotoAsset aponta para arquivos que existem; cadeira de rodas usa a foto da API', () {
+    final lista = (jsonDecode(File('data/equipamentos.json').readAsStringSync()) as List)
+        .map((e) => Equipamento.fromJson(e as Map<String, dynamic>))
+        .toList();
+    for (final e in lista) {
+      if (e.tipo == 'Cadeira de rodas') {
+        expect(e.fotoAsset, isNull);
+      } else {
+        expect(e.fotoAsset, isNotNull, reason: e.tipo);
+        expect(File(e.fotoAsset!).existsSync(), isTrue, reason: e.fotoAsset);
+      }
+    }
+  });
 }

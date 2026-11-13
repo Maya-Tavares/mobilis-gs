@@ -6,6 +6,7 @@ import '../models/pedido.dart';
 import '../services/preferencias_service.dart';
 import '../theme/app_theme.dart';
 import '../widgets/botao_primario.dart';
+import '../widgets/foto_equipamento.dart';
 import '../widgets/status_chip.dart';
 import '../widgets/tela_base.dart';
 
@@ -84,17 +85,7 @@ class _DetalheEquipamentoScreenState extends State<DetalheEquipamentoScreen> {
         children: [
           AspectRatio(
             aspectRatio: 16 / 10,
-            child: Image.network(
-              _e.fotoUrl,
-              fit: BoxFit.cover,
-              errorBuilder: (context, erro, pilha) => const ColoredBox(
-                color: AppCores.fundo,
-                child: Icon(Icons.image_not_supported, size: 48),
-              ),
-              loadingBuilder: (c, child, p) => p == null
-                  ? child
-                  : const Center(child: CircularProgressIndicator()),
-            ),
+            child: FotoEquipamento(equipamento: _e),
           ),
           Padding(
             padding: const EdgeInsets.all(AppEspacos.md),
